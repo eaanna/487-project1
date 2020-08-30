@@ -26,20 +26,50 @@ h4 {
 }
 
 /* dark blue icon navbar ????*/
-.menu {
-  background-image: url(dkbluemenu.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center top;
-  margin: auto;
+.dkbluemenu {
+  position: relative;
 }
-
 .iconactive {
-  display:none;
+  list-style-type: none;
+}
+.iconactive:hover #analyticsicon{
+  display: block;
+}
+.iconactive:active #analyticsicon{
+  display: block;
 }
 
-.iconactive:hover{
-  display: inline-block;
+#analyticsicon {
+  position: absolute;
+  top: 20px;
+  right: 390px;
+  display: none;
+}
+
+#custicon {
+  position: absolute;
+  top: -1px;
+  left: 442px;
+}
+#dashicon {
+  position: absolute;
+  top: 5px;
+  left: 350px;
+}
+#msgicon {
+  position: absolute;
+  top: 5px;
+  left: 525px;
+}
+#promoicon {
+  position: absolute;
+  top: 10px;
+  right: 565px;
+}
+#pagesicon {
+  position: absolute;
+  top: 20px;
+  right: 475px;
 }
 
 /* green dashboard */
@@ -485,6 +515,24 @@ display: flex;
   left: 40px;
   font-size: 14pt;
 }
+
+/* footer */
+.footer {
+  background-color: #f5f5f5;
+  border: lightgray solid 2px;
+  position: relative;
+}
+.footerrow {
+  display: flex;
+  justify-content: space-around;
+}
+#footercol1{
+  display: flex;
+}
+.col1text {
+  padding-left: 15px;
+}
+
 
 /* SPRITES */
 .sprite {

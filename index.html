@@ -32,32 +32,31 @@
   </div>
 
   <!-- dark blue container -->
-  <div class="container-fluid">
+  <div class="container-fluid dkbluemenu">
     <!-- make 6 spans and change image in css for hover / active-->
-    <div class="menu"></div>
-    <ul>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+   <i class="sprite sprite-dkbluemenu"></i> 
+    <ul class="iconactive">
+      <li>
+        <a href="#" class="sprite sprite-active-analytics" id="analyticsicon"></a>
       </li>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+      <li id="custicon">
+        <a class="sprite sprite-active-cust"></a>
       </li>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+      <li id="dashicon">
+        <a href="#" class="sprite sprite-active-dash"></a>
       </li>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+      <li id="msgicon">
+        <a href="#" class="sprite sprite-active-msg"></a>
       </li>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+      <li id="promoicon">
+        <a href="#" class="sprite sprite-active-promo"></a>
       </li>
-      <li class="iconactive">
-        <span class="sprite sprite-active-analytics"></span>
+      <li id="pagesicon">
+        <a href="#" class="sprite sprite-active-pages"></a>
       </li>
     </ul>
-
-
   </div>
+
 
   <!-- dashboard -->
   <div class="dashboard container">
@@ -264,8 +263,8 @@
             <div class="col-lg-4">
               <div class="promowhite">
                 <i class="sprite sprite-right-promo right-promo"></i></div>
-                <p id="orange">Version 2.0</p>
-                <p id="orange2">is coming</p>
+              <p id="orange">Version 2.0</p>
+              <p id="orange2">is coming</p>
             </div>
           </div>
         </div>
@@ -275,7 +274,21 @@
   </div>
   <!-- end gray container -->
 
-  <!-- ADD BOTTOM BAR -->
+  <div class="container-fluid footer">
+    <div class="row footerrow">
+      <div id="footercol1" class="col-lg-3">
+        <p class="col1text">Tutorials</p>
+        <p class="col1text" >Support</p>
+        <p class="col1text">Blog</p>
+      </div>
+      <div class="col-lg-6">
+        <p>Ariel Winter likes your Win a Cooper Sweepstakes Promotion</p>
+      </div>
+      <div class="col-lg-3">
+        <p>Logout</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 
