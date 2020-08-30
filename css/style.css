@@ -1,0 +1,780 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h4 {
+  font-size: 19pt;
+  color: #27A4F2;
+}
+/* light blue navbar */
+.navbar {
+  background-color:#27A4F2;
+  color: white;
+  text-align: right;
+}
+
+.navlink {
+  color: white;
+  text-decoration-style: none;
+}
+.navlink:hover {
+  text-decoration-style: none;
+  color: #f5f5f5;
+}
+
+.navlink:active {
+  color: #f5f5f5;
+}
+
+/* dark blue icon navbar ????*/
+.menu {
+  background-image: url(dkbluemenu.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center top;
+  margin: auto;
+}
+
+.iconactive {
+  display:none;
+}
+
+.iconactive:hover{
+  display: inline-block;
+}
+
+/* green dashboard */
+.dashboard {
+  background-color: #46D175;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 18pt;
+  color: white;
+  width: 75%;
+}
+
+.dbrow {
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .dashboard {
+    display: block;
+    margin: auto;
+  }
+}
+
+/* announcement bar */
+.dash-nav{
+  display: flex;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+.announcements {
+  display: flex;
+  border-bottom: #f5f5f5 solid 1px;
+  margin: 0;
+}
+
+#announcementheader {
+ font-size: 10pt;
+ color: gray;
+ border-right: #f5f5f5 solid 2px;
+ border-left: #f5f5f5 solid 2px;
+ padding-top: 25px;
+}
+
+#announcetext{
+  font-size: 10pt;
+  font-weight: 550;
+  color: #F28E13;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .dashnav, #announcementheader, #announcetext {
+    margin: auto;
+  }
+}
+
+.buttonhover:hover {
+  background-color: #A5A5A5;
+}
+
+/* main white container */
+.maincontainer {
+  padding-top: 10px;
+  background-image: url(gray-bg.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center top;
+  margin: auto;
+}
+.bigwhite {
+  width: 85%;
+  height: auto;
+  padding: 0;
+}
+
+/* task section */
+.tasks {
+  font-size: 13pt;
+  color: #27A4F2;
+  list-style-type: none;
+  border: #f5f5f5 solid 1px;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #46D175;
+  color: white;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.taskbtn {
+  background-color: white;
+  color: #27A4F2;
+  border: #f5f5f5 solid 2px;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  font-size: 12pt;
+}
+
+.taskhover {
+  display: flex;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+.taskhover:hover{
+  color: #A5A5A5;
+  background-color:#f5f5f5;
+  z-index: 10;
+}
+
+.taskhover:hover .taskbtn{
+  color: #A5A5A5;
+  background-color:#f5f5f5;
+  z-index: 10;
+  border: #ececec solid 2px;
+}
+
+.taskhover:hover .circle{
+  color: #f5f5f5;
+  background-color:#a5a5a5;
+  z-index: 10;
+}
+
+/* analytics section */
+.analytics {
+position: relative;
+border: #f5f5f5 solid 1px;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+#bargraph{
+  width: 70%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 35px;
+  margin-left: 0;
+}
+.activitychart{
+display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .analytics {
+    margin: auto;
+  }
+  .activitychart, .socialform, #activitydropdown{
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+#channels {
+  flex: 0.15;
+  padding-left: 10px;
+  border-left: #f5f5f5 2px solid;
+}
+
+#activity{
+  color: #A5A5A5;
+  font-size: 9pt;
+  font-weight: 500;
+}
+
+#datedrop {
+  border: #A5A5A5;
+  border: 1px;
+  border-radius: 2px;
+  color: #A5A5A5;
+  font-size: 10pt;
+  padding: 6px;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+}
+
+.socialform{
+  display: flex;
+  margin-left: 80px;
+}
+
+.sociallabel{
+  margin-right: 15px;
+}
+
+.check {
+  border: #A5A5A5;
+  background-color: #A5A5A5;
+}
+
+/* recomendations section */
+.recommendations {
+  padding: 0;
+  list-style-type: none;
+}
+
+.recicon{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.recsubtext {
+  font-size: 8pt;
+  color: gray;
+  font-weight: 550;
+  padding: 0;
+  margin: 0;
+}
+
+.rechover{
+  list-style-type: none;
+  color: gray;
+  font-size: 11pt;
+  display: flex;
+}
+
+.recactive {
+  color: gray;
+
+}
+
+.recactive:hover {
+  color: black;
+  text-decoration-style: none;
+}
+
+/* contacts and customers section */
+.contactsandcustomers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.avibox {
+  width: 200px;
+  height: 200px;
+  border: #f5f5f5 2px solid;
+  position: relative;
+}
+.avatar1 {
+  position: absolute;
+  left: 55px;
+}
+.banner1 {
+  position: absolute;
+  left: -6px;
+  top: 60px;
+}
+.banner1text {
+  position: absolute;
+  left: 45px;
+  top: 65px;
+  color: white;
+  font-size: 12pt;
+}
+.banner1subtext {
+  position: absolute;
+  left: 55px;
+  top: 85px;
+  color: white;
+  font-size: 9pt;
+}
+.graph1 {
+  position: absolute;
+  left: 3px;
+  top: 115px;
+  border: #f5f5f5 2px solid;
+}
+.avatar2 {
+  position: absolute;
+  left: 55px;
+}
+.banner2 {
+  position: absolute;
+  left: -6px;
+  top: 60px;
+}
+.banner2text {
+  position: absolute;
+  left: 40px;
+  top: 65px;
+  color: white;
+  font-size: 12pt;
+}
+.banner2subtext {
+  position: absolute;
+  left: 55px;
+  top: 85px;
+  color: white;
+  font-size: 9pt;
+}
+.graph2 {
+  position: absolute;
+  left: 3px;
+  top: 115px;
+  border: #f5f5f5 2px solid;
+}
+@media screen and (max-width: 500px) {
+  .contactsandcustomers {
+    margin-bottom: 300px;
+  }
+}
+
+/* did you know section */
+.dykcontainer {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #27A4F2;
+  width: 560px;
+  height: 140px;
+}
+.didyouknow {
+  align-items: center;
+  color: white;
+}
+
+#dykhead {
+  font-size: 10pt;
+  font-weight: 500;
+  padding-top: 5%;
+  padding-left: 10%;
+  margin-bottom: 0;
+}
+
+#dyktext {
+  font-size: 10pt;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 500px) {
+  .dykcontainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* bottom promo carousel */
+.bottompiece {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #27A4F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 100px;
+  margin-top: 25px;
+
+}
+
+.promowhite {
+  margin: 10px;
+  width: 280px;
+  height: 160px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.left-promo {
+  position: absolute;
+  left: -21px;
+  top: -19px;
+}
+.mid-promo {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+}
+.right-promo {
+  position: absolute;
+  left: 35px;
+  top: -11px;
+}
+
+#green {
+  position: absolute;
+  color: #46D175;
+  top: 50px;
+  right: 15px;
+  font-size: 14pt;
+}
+#green2 {
+  position: absolute;
+  color: #46D175;
+  top: 70px;
+  right: 15px;
+  font-size: 14pt;
+}
+#gray {
+  position: absolute;
+  color: #333333;
+  top: 95px;
+  right: 15px;
+  font-size: 10pt;
+}
+#middletext {
+  position: absolute;
+  color: white;
+  top: 65px;
+  background-color: #46D175;
+  left: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11pt;
+  border-radius: 5px;
+}
+#orange {
+  position: absolute;
+  color: #F28E13;
+  top: 60px;
+  left: 40px;
+  font-size: 14pt;
+}
+#orange2 {
+  position: absolute;
+  color: #F28E13;
+  top: 80px;
+  left: 40px;
+  font-size: 14pt;
+}
+
+/* SPRITES */
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-4sq {
+  width: 81px;
+  height: 17px;
+  background-position: -5px -5px;
+}
+
+.sprite-Application-Dashboard_03 {
+  width: 42px;
+  height: 44px;
+  background-position: -96px -5px;
+}
+
+.sprite-Application-Dashboard_07 {
+  width: 66px;
+  height: 50px;
+  background-position: -148px -5px;
+}
+
+.sprite-Application-Dashboard_09 {
+  width: 52px;
+  height: 50px;
+  background-position: -224px -5px;
+}
+
+.sprite-Application-Dashboard_34 {
+  width: 31px;
+  height: 27px;
+  background-position: -286px -5px;
+}
+
+.sprite-Application-Dashboard_35 {
+  width: 24px;
+  height: 27px;
+  background-position: -327px -5px;
+}
+
+.sprite-active-analytics {
+  width: 65px;
+  height: 63px;
+  background-position: -361px -5px;
+}
+
+.sprite-active-cust {
+  width: 74px;
+  height: 94px;
+  background-position: -436px -5px;
+}
+
+.sprite-active-dash {
+  width: 78px;
+  height: 79px;
+  background-position: -520px -5px;
+}
+
+.sprite-active-msg {
+  width: 83px;
+  height: 87px;
+  background-position: -608px -5px;
+}
+
+.sprite-active-pages {
+  width: 74px;
+  height: 63px;
+  background-position: -701px -5px;
+}
+
+.sprite-active-promo {
+  width: 71px;
+  height: 79px;
+  background-position: -785px -5px;
+}
+
+.sprite-bargraph {
+  width: 453px;
+  height: 263px;
+  background-position: -701px -94px;
+}
+
+.sprite-bg-shade {
+  width: 1013px;
+  height: 304px;
+  background-position: -5px -367px;
+}
+
+.sprite-bottom-carousel {
+  width: 960px;
+  height: 252px;
+  background-position: -5px -681px;
+  z-index: -5;
+}
+
+.sprite-channels {
+  width: 106px;
+  height: 95px;
+  background-position: -1028px -367px;
+}
+
+.sprite-diduknow {
+  width: 563px;
+  height: 142px;
+  background-position: -5px -943px;
+}
+
+.sprite-dkbluemenu {
+  width: 1200px;
+  height: 110px;
+  background-position: -1164px -5px;
+  z-index: 1;
+}
+
+.sprite-fb {
+  width: 72px;
+  height: 17px;
+  background-position: -866px -5px;
+}
+
+.sprite-google {
+  width: 64px;
+  height: 18px;
+  background-position: -948px -5px;
+}
+
+.sprite-left-avi {
+  width: 103px;
+  height: 63px;
+  background-position: -1022px -5px;
+}
+
+.sprite-left-graph {
+  width: 190px;
+  height: 80px;
+  background-position: -5px -125px;
+}
+
+.sprite-left-left-flag {
+  width: 26px;
+  height: 50px;
+  background-position: -2374px -5px;
+}
+
+.sprite-left-promo {
+  width: 278px;
+  height: 190px;
+  background-position: -205px -125px;
+}
+
+.sprite-left-right-flag {
+  width: 17px;
+  height: 50px;
+  background-position: -1135px -5px;
+}
+
+.sprite-leftbanner {
+  width: 210px;
+  height: 5px;
+  background-position: -1164px -125px;
+}
+
+.sprite-leftbanner-79 {
+  width: 208px;
+  height: 56px;
+  background-position: -1384px -125px;
+}
+
+.sprite-leftbanner-87 {
+  width: 2px;
+  height: 6px;
+  background-position: -2410px -5px;
+}
+
+.sprite-marker {
+  width: 56px;
+  height: 19px;
+  background-position: -493px -125px;
+}
+
+.sprite-middle-promo {
+  width: 292px;
+  height: 190px;
+  background-position: -1602px -125px;
+}
+
+.sprite-rec-1 {
+  width: 56px;
+  height: 59px;
+  background-position: -559px -125px;
+}
+
+.sprite-rec-2 {
+  width: 56px;
+  height: 58px;
+  background-position: -625px -125px;
+}
+
+.sprite-rec-3 {
+  width: 56px;
+  height: 59px;
+  background-position: -1904px -125px;
+}
+
+.sprite-rec-4 {
+  width: 56px;
+  height: 58px;
+  background-position: -1970px -125px;
+}
+
+.sprite-referrals {
+  width: 101px;
+  height: 98px;
+  background-position: -2036px -125px;
+}
+
+.sprite-right-avi {
+  width: 91px;
+  height: 68px;
+  background-position: -2147px -125px;
+}
+
+.sprite-right-graph {
+  width: 190px;
+  height: 80px;
+  background-position: -493px -203px;
+}
+
+.sprite-right-left-flag {
+  width: 21px;
+  height: 50px;
+  background-position: -5px -65px;
+}
+
+.sprite-right-promo {
+  width: 265px;
+  height: 182px;
+  background-position: -1164px -203px;
+}
+
+.sprite-right-right-flag {
+  width: 17px;
+  height: 50px;
+  background-position: -36px -65px;
+}
+
+.sprite-rightbanner {
+  width: 210px;
+  height: 50px;
+  background-position: -2147px -203px;
+}
+
+.sprite-search {
+  width: 46px;
+  height: 45px;
+  background-position: -2248px -125px;
+  float: right;
+  position: relative;
+}
+
+.sprite-task1 {
+  width: 86px;
+  height: 61px;
+  background-position: -2304px -125px;
+}
+
+.sprite-task2 {
+  width: 86px;
+  height: 60px;
+  background-position: -1439px -196px;
+}
+
+.sprite-task3 {
+  width: 86px;
+  height: 61px;
+  background-position: -1904px -196px;
+}
+
+.sprite-task4 {
+  width: 86px;
+  height: 60px;
+  background-position: -5px -263px;
+}
+
+.sprite-twitter {
+  width: 55px;
+  height: 17px;
+  background-position: -1535px -196px;
+}

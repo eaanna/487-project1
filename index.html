@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>MEJO 487: Project 1</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+  <!-- Bootstrap core CSS (CDN) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- top light blue bar -->
+  <div class="container-fluid navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">MINI of Raleigh</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- dark blue container -->
+  <div class="container-fluid">
+    <!-- make 6 spans and change image in css for hover / active-->
+    <div class="menu"></div>
+    <ul>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+      <li class="iconactive">
+        <span class="sprite sprite-active-analytics"></span>
+      </li>
+    </ul>
+
+
+  </div>
+
+  <!-- dashboard -->
+  <div class="dashboard container">
+    <div class="row dbrow">
+      <div class="col-lg-8">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="col-lg-4">
+        <form class="form-inline">
+          <input class="form-control" type="text">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- main container (gray shadow) -->
+    <div role="main" class="container maincontainer">
+      <!-- inner white contianer -->
+      <div class="container bigwhite">
+        <div class="row announcements">
+
+          <!-- announcement bar 2-9-1? -->
+          <div class="col-lg-2">
+            <p id="announcetext">ANNOUNCEMENTS</p>
+          </div>
+          <div class="col-lg-9" id="announcementheader">
+            <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.
+            </p>
+          </div>
+          <div class="col-lg-1 dash-nav">
+            <a href="#"><i class="sprite sprite-Application-Dashboard_34"></i></a>
+            <a href="#"><i class="sprite sprite-Application-Dashboard_35"></i></a>
+          </div>
+        </div>
+
+        <!-- big 4:8 box -->
+
+        <!-- TASKS -->
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="tasks">
+              <li>
+                <h4>Tasks</h4>
+              </li>
+              <li class="taskhover">
+                <div class="circle">1</div>
+                <p>Welcome Contacts</p>
+                <button class="taskbtn">32</button>
+              </li>
+              <li class="taskhover">
+                <div class="circle">2</div>
+                <p>Provide Responses</p>
+                <button class="taskbtn">36</button>
+              </li>
+              <li class="taskhover">
+                <div class="circle">3</div>
+                <p>Review Activity</p>
+                <button class="taskbtn">36</button>
+              </li>
+              <li class="taskhover">
+                <div class="circle">4</div>
+                <p>Reach Out</p>
+                <button class="taskbtn">3</button>
+              </li>
+            </ul>
+
+            <!-- RECOMMENDATIONS -->
+            <ul class="recommendations">
+              <li>
+                <h4 style="padding-left: 20px;">Recommendations</h4>
+              </li>
+              <li class="rechover">
+                <i class="sprite sprite-rec-1 recicon"></i>
+                <div>
+                  <p class="recsubtext">Article</p>
+                  <a href="#" class="recactive">
+                    <p>7 Steps to getting more Fans</p>
+                  </a>
+                </div>
+              </li>
+              <li class="rechover">
+                <i class="sprite sprite-rec-2 recicon"></i>
+                <div>
+                  <p class="recsubtext">Article</p>
+                  <a href="#" class="recactive">
+                    <p>Increase traction with more Interactions</p>
+                  </a>
+                </div>
+              </li>
+              <li class="rechover">
+                <i class="sprite sprite-rec-3 recicon"></i>
+                <div>
+                  <p class="recsubtext">Checklist</p>
+                  <a href="#" class="recactive">
+                    <p>Creating a Promotion</p>
+                  </a>
+                </div>
+              </li>
+              <li class="rechover">
+                <i class="sprite sprite-rec-4 recicon"></i>
+                <div>
+                  <p class="recsubtext">Tip</p>
+                  <a href="#" class="recactive">
+                    <p>Share More</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ANALYTICS -->
+          <div class="col-lg-8">
+            <div class="analytics">
+              <h4>Analytics</h4>
+              <p id="activity">ACTIVITY</p>
+              <div id="activitydropdown">
+                <form>
+                  <select id="datedrop">
+                    <option value="date">3/28/11 - 4/21/11</option>
+                    <option value="date">4/28/11 - 5/21/11</option>
+                    <option value="date">5/28/11 - 6/21/11</option>
+                    <option value="date">6/28/11 - 7/21/11</option>
+                  </select>
+                </form>
+              </div>
+              <div>
+                <div class="activitychart">
+                  <img id="bargraph" src="img/graph.png" alt="bar graph">
+                  <div id="channels">
+                    <p id="activity">CHANNELS</p>
+                    <i class="sprite sprite-channels"></i>
+                    <P id="activity">REFERRALS</P>
+                    <i class="sprite sprite-referrals"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="socials">
+                <form class="socialform" action="/action_page.php">
+                  <input class="check" type="checkbox">
+                  <label class="sprite sprite-fb sociallabel"></label>
+                  <input type="checkbox">
+                  <label class="sprite sprite-twitter sociallabel"></label>
+                  <input type="checkbox">
+                  <label class="sprite sprite-4sq sociallabel"></label>
+                  <input type="checkbox">
+                  <label class="sprite sprite-google sociallabel"></label>
+                </form>
+              </div>
+            </div>
+
+            <!-- CUSTOMERS AND CONTACTS -->
+            <div>
+              <div class="contactsandcustomers">
+
+                <div class="avibox">
+                  <i class="sprite sprite-left-avi avatar1"></i>
+                  <i class="sprite sprite-rightbanner banner1"></i>
+                  <p class="banner1text">75 CONTACTS</p>
+                  <p class="banner1subtext">0 INFLUENCERS</p>
+                  <i class="sprite sprite-left-graph graph1"></i>
+                </div>
+                <div class="avibox">
+                  <i class="sprite sprite-right-avi avatar2"></i>
+                  <i class="sprite sprite-rightbanner banner2"></i>
+                  <p class="banner2text">17 CUSTOMERS</p>
+                  <p class="banner2subtext">0 INFLUENCERS</p>
+                  <i class="sprite sprite-right-graph graph2"></i>
+                </div>
+              </div>
+
+              <!-- DID YOU KNOW -->
+              <div class="dykcontainer">
+                <div class="didyouknow">
+                  <div>
+                    <p id="dykhead">DID YOU KNOW?</p>
+                    <p id="dyktext">Maecenas sed diam eget risus blandit set amet mon magna. Lorem ipsum dolor sit
+                      amet,
+                      consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom 4-4-4 image box -->
+        <div>
+          <div class="row bottompiece">
+            <div class="col-lg-4">
+              <div class="promowhite">
+                <i class="sprite sprite-left-promo left-promo"></i>
+                <p id="green">Watch what</p>
+                <p id="green2">you say.</p>
+                <p id="gray">Message Management.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="promowhite">
+                <i class="sprite sprite-middle-promo mid-promo"></i>
+                <p id="middletext">See what others are doing with us.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="promowhite">
+                <i class="sprite sprite-right-promo right-promo"></i></div>
+                <p id="orange">Version 2.0</p>
+                <p id="orange2">is coming</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end inner white container -->
+    </div>
+  </div>
+  <!-- end gray container -->
+
+  <!-- ADD BOTTOM BAR -->
+</body>
+
+
+<!-- BS JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+</html>
+
+<!-- SPRITES
+
+  <i class="sprite sprite-4sq"></i>
+<i class="sprite sprite-Application-Dashboard_03"></i> (settings icon)
+<i class="sprite sprite-Application-Dashboard_07"></i> (left dyk nav)
+<i class="sprite sprite-Application-Dashboard_09"></i>  (right dyk nav)
+<i class="sprite sprite-Application-Dashboard_34"></i> (left nav for announcement bar)
+<i class="sprite sprite-Application-Dashboard_35"></i> (right nav)
+<i class="sprite sprite-active-analytics"></i>
+<i class="sprite sprite-active-cust"></i>
+<i class="sprite sprite-active-dash"></i>
+<i class="sprite sprite-active-msg"></i>
+<i class="sprite sprite-active-pages"></i>
+<i class="sprite sprite-active-promo"></i>
+<i class="sprite sprite-bargraph"></i>
+<i class="sprite sprite-bg-shade"></i>
+<i class="sprite sprite-bottom-carousel"></i>
+<i class="sprite sprite-channels"></i>
+<i class="sprite sprite-diduknow"></i>
+<i class="sprite sprite-dkbluemenu"></i>
+<i class="sprite sprite-fb"></i>
+<i class="sprite sprite-google"></i>
+<i class="sprite sprite-left-avi"></i>
+<i class="sprite sprite-left-graph"></i>
+<i class="sprite sprite-left-left-flag"></i>
+<i class="sprite sprite-left-promo"></i>
+<i class="sprite sprite-left-right-flag"></i>
+<i class="sprite sprite-leftbanner"></i>
+<i class="sprite sprite-leftbanner-79"></i>
+<i class="sprite sprite-leftbanner-87"></i>
+<i class="sprite sprite-marker"></i>
+<i class="sprite sprite-middle-promo"></i>
+<i class="sprite sprite-rec-1"></i>
+<i class="sprite sprite-rec-2"></i>
+<i class="sprite sprite-rec-3"></i>
+<i class="sprite sprite-rec-4"></i>
+<i class="sprite sprite-referrals"></i>
+<i class="sprite sprite-right-avi"></i>
+<i class="sprite sprite-right-graph"></i>
+<i class="sprite sprite-right-left-flag"></i>
+<i class="sprite sprite-right-promo"></i>
+<i class="sprite sprite-right-right-flag"></i>
+<i class="sprite sprite-rightbanner"></i>
+<i class="sprite sprite-search"></i>
+<i class="sprite sprite-task1"></i>
+<i class="sprite sprite-task2"></i>
+<i class="sprite sprite-task3"></i>
+<i class="sprite sprite-task4"></i>
+<i class="sprite sprite-twitter"></i>
+
+-->
